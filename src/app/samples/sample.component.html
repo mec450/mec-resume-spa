@@ -1,0 +1,5 @@
+<div [ngClass]="['sample-inner',enlargeImg]">
+  <h3>Most Recent Project</h3>
+  <tabs [categories]="sample.categories" [selectedTab]="selectedTab" [selectedImg]="selectedImg" [viewIndex]="2" [viewType]="'black'" (expandImage)="onExpandImage($event);"></tabs>
+</div>
+<div [ngClass]="['sample-bg',enlargeImg]"></div>

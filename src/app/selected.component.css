@@ -1,0 +1,77 @@
+:host{
+  display:flex;
+}
+
+p{
+  font-size:1em;
+}
+
+.hide{
+  display:none;
+}
+
+.home{
+  width:94%;
+  overflow:hidden;
+}
+
+.bg-right{
+  background-image: url(app/img/bg-right-tile.png);
+  background-repeat: repeat-y;
+}
+
+.bg-right,
+.bg-left{
+  width:3%;
+  background-color:#000;
+  overflow:hidden;
+}
+
+.left,
+.right{
+  width:50%;
+  min-width:580px;
+}
+
+.top,
+.middle,
+.bottom{
+  display: flex;
+}
+
+@media screen and (max-width: 1240px) {
+  .left,
+  .right{
+    min-width:initial;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .top{
+    max-width:none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .top{
+    flex-direction:column;
+  }
+  .right{
+    flex-direction:column-reverse;
+  }
+  .left,
+  .right{
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bg-right,
+  .bg-left{
+    display:none;
+  }
+  .home{
+    width:100%;
+  }
+}
+

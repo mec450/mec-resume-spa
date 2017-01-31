@@ -1,0 +1,10 @@
+<div class="tabs-inner">
+  <h4>
+    <div [ngClass]="['tab-categories',viewType]">
+      <!--<a *ngFor="let cat of categories; let index = index" [class.active]="index == selected" [routerLink]="['/', index]">{{cat.tab}}</a>-->
+    <a *ngFor="let cat of categories; let tabIndex = index" [class.active]="tabIndex == selectedTab" (click)="onTabClick(tabIndex,viewIndex)">{{cat.title}}</a>
+</div>
+  </h4>
+  <div *ngIf="selectedImg"><img [ngClass]="['sample-img',imgSize]" [src]="selectedImg" (click)="onImgClick()"></div>
+  <div *ngIf="!selectedImg && categories" [innerHTML]="categories[selectedTab].content"></div>
+</div>

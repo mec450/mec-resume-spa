@@ -1,0 +1,34 @@
+:host {
+  background: #fff;
+  width: 37.5%;
+}
+
+.education-inner{
+  padding:0 5%;
+}
+
+.education-inner h3{
+  color:#b80d13;
+  font-size: 1.5em;
+}
+
+.education-categories{
+  padding:0;
+}
+
+.education-categories li{
+  font-size:0.875em;
+  display:inline-block;
+}
+
+.education-categories li.active{
+  background: #000;
+  color: #fff;
+}
+
+.education-content{
+}
+
+.education-content{
+
+}

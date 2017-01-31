@@ -1,0 +1,16 @@
+<div class="bg-left"><img src="app/img/bg-left.png"/></div>
+<div class="home">
+  <!--<test></test>-->
+  <div class="top">
+    <div class="left">
+      <me [ngClass]="[displaySample]"></me>
+      <experience [ngClass]="[displaySample]"></experience>
+      <sample (displaySample)="onDisplaySample($event);"></sample>
+    </div>
+    <div [ngClass]="['right',displaySample]">
+      <technology></technology>
+      <plans></plans>
+    </div>
+  </div>
+</div>
+<div class="bg-right"><img src="app/img/bg-right.png"/></div>

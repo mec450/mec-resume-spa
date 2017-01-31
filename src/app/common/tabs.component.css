@@ -1,0 +1,50 @@
+.tabs-inner{
+  width:90%;
+}
+
+.tab-categories{
+  padding:0;
+}
+
+.tab-categories a{
+  font-size:1em;
+  display:inline-block;
+  margin-right:0.75em;
+  text-decoration:none;
+}
+
+a{
+  margin-bottom: 0.25em;
+}
+
+.white a{
+  color:#000;
+}
+
+.white a.active{
+  background: #000;
+  color: #fff;
+}
+
+.black a{
+  color:#fff;
+}
+
+.black a.active{
+  background: #fff;
+  color: #000;
+}
+
+.tab-categories a{
+  cursor:pointer;
+}
+
+.sample-img{
+  width:90%;
+  cursor:zoom-in;
+}
+
+.sample-img.enlarge{
+  width:85%;
+  cursor:zoom-out;
+}

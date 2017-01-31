@@ -1,0 +1,46 @@
+:host {
+  background: #000;
+  top: 30.625em;
+  color:#fff;
+  display:inline-block;
+  padding: 1em 0;
+  width:100%;
+}
+
+.plans-inner{
+  padding:0 5%;
+}
+
+.plans-inner h3{
+  color:#b80d13;
+  font-size: 1.5em;
+}
+
+.plans-inner h5{
+  color:#fff;
+  font-size: 1.25em;
+  margin:0 0 1em;
+}
+
+.plans-categories{
+  padding:0;
+}
+
+.plans-categories li{
+  font-size:0.875em;
+  display:inline-block;
+}
+
+.plans-categories li.active{
+  background: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 680px) {
+  :host{
+    width:100%;
+  }
+  .plans-inner{
+    padding: 0 1em;
+  }
+}

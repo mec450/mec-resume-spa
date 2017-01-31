@@ -1,0 +1,7 @@
+<div class="me-inner">
+  <div *ngIf="mec">
+    <h1>{{mec.name}}</h1>
+    <h2>{{mec.title}}</h2>
+    <div [innerHTML]="mec.overview"></div>
+  </div>
+</div>

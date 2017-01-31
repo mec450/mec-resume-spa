@@ -1,0 +1,7 @@
+<div class="plans-inner">
+  <h3>What My Plans Are</h3>
+  <div *ngIf="plan">
+    <h4>{{plan.title}}</h4>
+    <div [innerHTML]="plan.overview"></div>
+  </div>
+</div>

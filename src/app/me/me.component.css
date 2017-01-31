@@ -1,0 +1,33 @@
+:host {
+  /*position:absolute;
+  left:12%;
+  display: inline-block;
+  width: 35%;*/
+  display:inline-block;
+  min-height: 400px;
+  background: #000;
+  color: #fff;
+  padding: 1em 0;
+}
+
+.me-inner{
+  padding: 0 1.25em;
+}
+
+h1{
+  font-family: 'Roboto Thin', sans-serif;
+  font-size:2.25em;
+  margin-top:0.2em;
+}
+
+h2{
+  font-family: 'Roboto Bold', sans-serif;
+  font-size:0.875em;
+}
+
+@media screen and (max-width: 680px) {
+  :host{
+    width:100%;
+    height:auto;
+  }
+}

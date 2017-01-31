@@ -1,0 +1,18 @@
+<div class="test-inner">
+  TEST
+  {{clock | async | date: 'yMMMMEEEEdjms'}}
+  <div>TIMER</div>
+  <div>
+    <button (click)="click$.next()">Click Me</button>
+    {{timer | async | date: 'yMMMMEEEEdjms'}}
+  </div>
+  <div>
+    {{fname}}
+    <input required type="text" [(ngModel)]="fname" #fnameRef="ngModel" minlength="3">
+    {{fnameRef.valid}}
+  </div>
+  <div *ngIf="fnameRef.errors?.required">This field is required</div>
+  <div *ngIf="fnameRef.errors?.minlength">This field must be longer than 3 characters</div>
+  <div *ngIf="fnameRef.errors?.minlength">Min length is = {{fnameRef.errors?.minlength.requiredLength}}. You only typed {{fnameRef.errors?.minlength.actualLength}}</div>
+  <div>{{fnameRef.errors | json}}</div>
+</div>

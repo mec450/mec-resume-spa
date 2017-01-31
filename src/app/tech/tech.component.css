@@ -1,0 +1,45 @@
+:host {
+  min-height: 400px;
+  padding: 1em 0;
+  display:inline-block;
+  border-left:3px solid #000;
+  width:100%;
+}
+
+.tech-inner{
+  padding: 0 5%;
+}
+
+h4 {
+  display:none;
+}
+
+
+.tech-inner h3{
+  color:#b80d13;
+  font-size: 1.5em;
+}
+
+.tech-categories{
+  padding:0;
+}
+
+.tech-categories li{
+  font-size:0.875em;
+  display:inline-block;
+}
+
+.tech-categories li.active{
+  background: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 680px) {
+  :host{
+    height:auto;
+    width:100%;
+    border:none;
+  }
+}
+
+
