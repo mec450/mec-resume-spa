@@ -37,9 +37,6 @@ export class SampleComponent {
         this.selectedImg = this.sample.categories[this.selectedTab].content;
       }
     });
-    console.log('adding a log to sample component constructor.');
-    console.log('adding another log to sample component constructor.');
-    console.log('adding yet another log to sample component constructor.');
   }
 
   private ngOnInit() {
