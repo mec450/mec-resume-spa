@@ -37,7 +37,6 @@ export class SampleComponent {
         this.selectedImg = this.sample.categories[this.selectedTab].content;
       }
     });
-    console.log('adding log to cloned project');
   }
 
   private ngOnInit() {
