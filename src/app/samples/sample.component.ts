@@ -39,6 +39,7 @@ export class SampleComponent {
     });
     console.log('adding a log to sample component constructor.');
     console.log('adding another log to sample component constructor.');
+    console.log('adding yet another log to sample component constructor.');
   }
 
   private ngOnInit() {
