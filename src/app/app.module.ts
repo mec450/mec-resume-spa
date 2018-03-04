@@ -10,6 +10,8 @@ import { ExperienceService } from './experience/experience.service';
 import { PlansService } from './plans/plans.service';
 import { SampleService } from './samples/sample.service';
 import { TestService } from './test/test.service';
+import { FooterService } from './footer/footer.service';
+import { ModalService } from './modal/modal.service';
 import appRoutes from './app.routes.ts';
 
 @NgModule({
@@ -24,7 +26,7 @@ import appRoutes from './app.routes.ts';
     HomeModule,
     appRoutes
   ],
-  providers: [TestService,PlansService,MeService,TechService,ExperienceService,SampleService],
+  providers: [TestService,PlansService,MeService,TechService,ExperienceService,SampleService,FooterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

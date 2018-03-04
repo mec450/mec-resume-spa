@@ -7,6 +7,7 @@ import {TechModule} from './tech/tech.module';
 import {ExperienceModule} from './experience/experience.module';
 import {PlansModule} from './plans/plans.module';
 import {SampleModule} from './samples/sample.module';
+import {FooterModule} from './footer/footer.module';
 import {TestModule} from './test/test.module';
 import homeRoutes from './home.routes';
 
@@ -17,7 +18,7 @@ import homeRoutes from './home.routes';
     HomeComponent,
     SelectedComponent
   ],
-  imports: [CommonModule,MeModule,TechModule,ExperienceModule,PlansModule,SampleModule,TestModule,homeRoutes],
+  imports: [CommonModule,MeModule,TechModule,ExperienceModule,PlansModule,SampleModule,TestModule,FooterModule,homeRoutes],
   providers: [],
   exports: [HomeComponent,SelectedComponent]
 })

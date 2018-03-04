@@ -23,18 +23,25 @@
       line-height:1.35em;
     }
     .inner{
-      height: 90px;
-      background-image: url("app/img/home/tile.png");
-      background-repeat:repeat-x;
+      height: 45px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #000;
+    }
+    .inner .bar{
+      height: 15px;
+      background:#b80d13;
     }
     .app-container{
       background:#fff;
       min-height:750px;
+      padding-top:45px;
     }
     .logo{
       display:inline-block;
       position:absolute;
-      left:10%;
+      left:1.5%;
       /*
           display: inline-block;
     position: absolute;
@@ -88,6 +95,7 @@
         <li class="main-nav-btn" data-nav="web-design"><a href="http://www.mecsamples.com">samples</a></li>
         <li class="main-nav-btn" data-nav="web-design"><a href="mailto:martin@mecsamples.com">contact</a></li>
       </ul>
+      <div class="bar"></div>
     </div>
     <div class="app-container">
       <app-root>Loading...</app-root>

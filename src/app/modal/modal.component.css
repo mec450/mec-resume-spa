@@ -1,0 +1,41 @@
+:host {
+
+}
+
+.shape{
+  position: fixed;
+  top: 0;
+  left: 25%;
+  width: 45%;
+  background: #000;
+  -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  /* -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.3); */
+  /* box-shadow: 3px 3px 5px rgba(0,0,0,0.53); */
+  padding: 2em 2em 4.5em;
+}
+
+p.hi{
+  font-size:1.75em;
+  text-shadow: 2px 2px red;
+}
+
+p{
+  color:#fff;
+  font-size:1.25em;
+  transform: rotate(-2deg);
+  text-shadow: 2px 2px #666;
+}
+
+.close{
+  float:right;
+  display:inline-block;
+  width:20px;
+  height:20px;
+  background:#FFF;
+  text-align:center;
+}
+
+.close span{
+  display:inline-block;
+  margin-top:1%;
+}

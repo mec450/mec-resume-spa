@@ -16,7 +16,6 @@ export class HomeComponent {
   }
 
   onDisplaySample(event) {
-    console.log('HIDE COMPONENT BY EMIT = ' , event);
     this.displaySample = (event.viewType === 'enlarge') ? 'hide' : 'show';
   }
 }
